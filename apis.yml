@@ -1,20 +1,72 @@
 aid: zorus
 name: Zorus
-description: Zorus is a company surfaced as a portfolio company of general-catalyst and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Zorus is a cybersecurity company that provides DNS web protection and filtering
+  built for managed service providers (MSPs), managed security service providers
+  (MSSPs), and IT teams. Its Archon agent delivers DNS filtering without requiring
+  per-router DNS changes, layered with CyberSight behavioral user analytics, geo-IP
+  and network filtering, zero-trust device isolation, and SaaS inventory and usage
+  visibility. Zorus is delivered as a multi-tenant SaaS platform administered through
+  a partner portal (portal.zorustech.com), positioned as an alternative to Cisco
+  Umbrella, WebRoot DNS, and WebTitan. Zorus does not currently publish a public
+  developer API, OpenAPI specification, SDKs, or developer documentation; its API
+  surface (api.zorustech.com) sits behind the authenticated product portal. This
+  profile captures the company's public web properties and probed security posture.
 url: https://raw.githubusercontent.com/api-evangelist/zorus/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - general-catalyst
 x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier-reason: no-public-api-surface
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
+image: https://www.zorustech.com/wp-content/uploads/2024/03/zoom-bg.png
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Cybersecurity
+- DNS Filtering
+- Web Protection
+- MSP
+- MSSP
+- Network Security
+- Zero Trust
+- Analytics
 apis: []
+common:
+- type: DomainSecurity
+  url: security/zorus-domain-security.yml
+- type: Website
+  url: https://www.zorustech.com/
+- type: Portal
+  url: https://portal.zorustech.com/
+- type: Login
+  url: https://portal.zorustech.com/login
+- type: Blog
+  url: https://www.zorustech.com/blog/
+- type: Support
+  url: mailto:support@zorustech.com
+- type: PrivacyPolicy
+  url: https://www.zorustech.com/privacy-policy/
+- type: TermsOfService
+  url: https://www.zorustech.com/terms-of-service/
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
